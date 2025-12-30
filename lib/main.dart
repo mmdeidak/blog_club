@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
     final primaryTextColor = Color(0xff2d253c);
     final secondaryTextColor = Color(0xff2d4379);
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: HomeScreen(),
       theme: ThemeData(
         textTheme: TextTheme(

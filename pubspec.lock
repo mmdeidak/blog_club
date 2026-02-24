@@ -74,7 +74,7 @@ packages:
     source: hosted
     version: "4.1.1"
   build_runner:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: build_runner
       sha256: "39ad4ca8a2876779737c60e4228b4bcd35d4352ef7e14e47514093edc012c734"
@@ -230,6 +230,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_gen:
+    dependency: "direct dev"
+    description:
+      name: flutter_gen
+      sha256: eac4863b65813aacbf16ecc07e7c271ab82fb2d95181825348f1fb7b03fd52da
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "5.12.0"
   flutter_gen_core:
     dependency: transitive
     description:
@@ -239,7 +247,7 @@ packages:
     source: hosted
     version: "5.12.0"
   flutter_gen_runner:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: flutter_gen_runner
       sha256: c99b10af9d404e3f46fd1927e7d90099779e935e86022674c4c2a9e6c2a93b29

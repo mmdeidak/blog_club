@@ -1,6 +1,6 @@
+import 'package:blog_club/splash.dart';
 import 'package:flutter/material.dart';
 import 'gen/assets.gen.dart';
-import 'home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -58,12 +58,13 @@ class MyApp extends StatelessWidget {
               fontWeight: FontWeight.w700),
         ),
       ),
-      home: Stack(
-        children: [
-          Positioned.fill(child: HomeScreen()),
-          Positioned(bottom: 0, left: 0, right: 0, child: _BottomNavigation()),
-        ],
-      ),
+      // home: Stack(
+      //   children: [
+      //     Positioned.fill(child: HomeScreen()),
+      //     Positioned(bottom: 0, left: 0, right: 0, child: _BottomNavigation()),
+      //   ],
+      // ),
+      home: SplashScreen(),
     );
   }
 }

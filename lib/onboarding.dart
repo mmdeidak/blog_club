@@ -5,21 +5,21 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-class OnBoarding extends StatefulWidget {
-  const OnBoarding({super.key});
+class onBoardingScreen extends StatefulWidget {
+  const onBoardingScreen({super.key});
 
   @override
-  State<OnBoarding> createState() => _OnBoardingState();
+  State<onBoardingScreen> createState() => _onBoardingScreenState();
 }
 
-class _OnBoardingState extends State<OnBoarding> {
+class _onBoardingScreenState extends State<onBoardingScreen> {
   final PageController _pageController = PageController();
   final item = AppDatabase.onBoardingItems;
   int page = 0;
 
   @override
-  @override
   void initState() {
+    super.initState();
     _pageController.addListener(
       () {
         if (_pageController.page!.round() != page) {
@@ -34,6 +34,7 @@ class _OnBoardingState extends State<OnBoarding> {
     );
   }
 
+  @override
   Widget build(BuildContext context) {
     final ThemeData themeData = Theme.of(context);
     return Scaffold(

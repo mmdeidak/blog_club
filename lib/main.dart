@@ -28,6 +28,12 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
+        colorScheme: ColorScheme.light(
+          primary: Color(0xff376AED),
+          onPrimary: Colors.white,
+          surface: Color(0xffFBFCFF),
+          onSurface: primaryTextColor,
+        ),
         textTheme: TextTheme(
           titleMedium: TextStyle(
             color: secondaryTextColor,
@@ -68,8 +74,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
 
 class _BottomNavigation extends StatelessWidget {
   const _BottomNavigation();
